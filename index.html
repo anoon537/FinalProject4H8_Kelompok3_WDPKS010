@@ -27,79 +27,89 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-   <div class="context"></div>
-    <div class="area" >
-          <ul class="circles">
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-          </ul>
-          <div class="container">
-            <div class="text-center">
-              <h1>Ramalan Cuaca</h1>
-              <span id="clock"></span>
-              <div class="input-group mb-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Masukkan nama kota"
-                  id="city-input"
-                />
-                <button class="btn btn-outline-primary" type="button" id="search-btn">
-                  <i class="fas fa-search"></i>
-                </button>
+    <div class="context"></div>
+    <div class="area">
+      <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <div class="container">
+        <div class="text-center">
+          <h1>Ramalan Cuaca</h1>
+          <span id="clock"></span>
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Masukkan nama kota"
+              id="city-input"
+            />
+            <button class="btn btn-primary" type="button" id="search-btn">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"><i class="fas fa-city"></i> City</h5>
+                  <p class="card-text"></p>
+                  <h6 id="kota"></h6>
+                </div>
               </div>
-      
-              <div class="row">
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">City</h5>
-                      <p class="card-text"><h6 id="kota"></h6></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Temperature</h5>
-                      <p class="card-text"><h6 id="temp"></h6></p>
-                    </div>
-                  </div>
-                </div>
-              </div><br>
-      
-              <div class="row">
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Conditions</h5>
-                      <p class="card-text"><h6 id="condition"></h6></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Wind Speed</h5>
-                      <p class="card-text"><h6 id="wind-speed"></h6></p>
-                    </div>
-                  </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <i class="fas fa-temperature-low"></i> Temperature
+                  </h5>
+                  <p class="card-text"></p>
+                  <h6 id="temp"></h6>
                 </div>
               </div>
             </div>
           </div>
-  </div >
+          <br />
 
-    
+          <div class="row">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <i class="fas fa-cloud"></i> Conditions
+                  </h5>
+                  <p class="card-text"></p>
+                  <h6 id="condition"></h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <i class="fas fa-wind"></i> Wind Speed
+                  </h5>
+                  <p class="card-text"></p>
+                  <h6 id="wind-speed"></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- End Footer -->
     <script src="script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
